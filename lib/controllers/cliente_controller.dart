@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 
 class ClienteService {
   final String baseUrl =
-      'https://backendalquilerautos.onrender.com/api/clientes'; //url de la API -> cambiar
+      'https://alquiler-autos-dusw.onrender.com/api/clientes'; 
 
   //Metodo registrar cliente
   Future<http.Response> registrarCliente(
@@ -29,7 +29,7 @@ class ClienteService {
   Future<Map<String, dynamic>> loginCliente(
       String correo, String password) async {
     final url = Uri.parse(
-        'https://backendalquilerautos.onrender.com/api/login'); //url de la API -> cambiar
+        'https://alquiler-autos-dusw.onrender.com/api/login');
     final response = await http.post(
       url,
       headers: {'Content-Type': 'application/json'},

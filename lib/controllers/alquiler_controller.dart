@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 
 class AlquilerService {
   final String baseUrl =
-      "https://backendalquilerautos.onrender.com/api/alquiler"; //url de la API -> cambiar
+      "https://alquiler-autos-dusw.onrender.com/api/alquiler"; 
   // Método para registrar un alquiler
   Future<Map<String, dynamic>> registrarAlquiler(
       int clienteId, int autoId, String fechaInicio, String fechaFin) async {
